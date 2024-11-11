@@ -11,7 +11,9 @@
 <h1>My First Heading</h1>
 <p>My first paragraph.</p><br>
 <h1>Google Suche</h1>
+
 <div class="search-div">
+    <div class="container" id="animatedDiv">
     <div class="search-all">
     <h1>Google Search</h1>
 <div class="center-search">
@@ -36,6 +38,22 @@
 </div>
 </div>
 </div>
+
+</div>
+
+
+
+
+
+<script>
+    // Fügt die "show"-Klasse nach einer kurzen Verzögerung hinzu
+    window.addEventListener("load", function() {
+        const container = document.getElementById("animatedDiv");
+        setTimeout(() => {
+            container.classList.add("show");
+        }, 100); // Verzögerung von 100ms für den Effekt
+    });
+  </script>
 
 
 <script src="script.js"></script>

@@ -26,7 +26,7 @@ body {
     background-color: #03030363;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
     backdrop-filter: blur(5px);
-    border-radius: 10px;
+    border-radius: 13px;
     border: 1px solid #00000050;
 }
 .center-search {
@@ -66,20 +66,26 @@ body {
     border: 1px solid #00000050;
     background-color: #00000085;
     color: aliceblue;
-    border-radius: 5px;
+    border-radius: 99px;
     margin-right: 20px;
 }
 
 /* Stil für den Suchbutton */
 button {
     padding: 8px 16px;
-    border: none;
     background-color: #00000085;
     border: 1px solid #00000050;
     color: white;
-    border-radius: 5px;
+    border-radius: 99px;
     cursor: pointer;
 }
+
+
+button:hover {
+    border-radius: 5px;
+    transition: all 0.9s ease; /* Alle Eigenschaften mit einer Transition versehen */
+}
+    
 
 
 
@@ -101,4 +107,25 @@ footer a {
     text-decoration: none;
     color: inherit;
 
+}
+
+
+
+
+
+/* Grundstil des Divs */
+.container {
+    opacity: 0; /* Startet unsichtbar */
+    transform: translateY(20px); /* Leicht nach unten verschoben */
+    transition: all 0.6s ease; /* Übergangseffekt */
+    backdrop-filter: blur(0.5px);
+    border-radius: 13px;
+}
+
+/* Eingeblendeter Zustand */
+.container.show {
+    opacity: 1; /* Sichtbar */
+    transform: translateY(0); /* Zurück zur normalen Position */
+    backdrop-filter: blur(5px);
+    border-radius: 13px;
 }
