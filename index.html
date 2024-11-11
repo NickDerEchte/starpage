@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-CH">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Start Page</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 <body>
 
 <h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<p>My first paragraph.</p><br>
+<h1>Google Suche</h1>
+<div class="search-div">
+    <div class="search-all">
+    <h1>Google Search</h1>
+<div class="center-search">
+    <input type="text" id="searchInput" placeholder="Type here..." >
+    <button onclick="searchGoogle()">Search</button>
+
+    <script>
+        function searchGoogle() {
+            const query = document.getElementById("searchInput").value;
+            if (query) {
+                window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+            }
+        }
+
+        // Event Listener Search
+        document.getElementById("searchInput").addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                searchGoogle();
+            }
+        });
+    </script>
+</div>
+</div>
+</div>
+
 
 <script src="script.js"></script>
 </body>
+<footer>
+    (c) Nick Figner 2024 | <a href="https://www.figner.nickfigner.com">A Figner Project.</a> | <a href="https://github.com/NickDerEchte/starpage">GitHub</a> | <a href="https://www.nickfigner.com">Website</a> | <a href="https://www.buymeacoffee.com/nickdesigns">Donate</a>
+</footer>
 </html>

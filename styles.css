@@ -1,0 +1,104 @@
+body {
+
+    height: 100vh;
+    margin: 0;
+    background-color: #40c561;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/07/14/03/japan-1805865_1280.jpg);
+    background-size: cover; /* Bild wird auf 100% skaliert und gecroppt */
+    background-position: center; /* Zentrum des Bildes wird angezeigt */
+    background-repeat: no-repeat; /* Verhindert die Wiederholung des Bildes */
+    overflow: hidden; /* Verhindert das Scrollen */
+}
+
+.search-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #03030363;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid #00000050;
+}
+.center-search {
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#searchInput {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #00000050;
+    background-color: #00000085;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* Stil für den Suchbutton */
+button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #00000085;
+    border: 1px solid #00000050;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+footer {
+    color: #ffffff63;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 3px;
+    box-shadow: 1px 16px 34px -7px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 1px 16px 34px -7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 16px 34px -7px rgba(0,0,0,0.3);
+
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+
+}
