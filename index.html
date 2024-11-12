@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Start Page</title>
+        <title>Starpage</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 <body>
@@ -40,6 +40,37 @@
 </div>
 
 </div>
+<br>
+
+<div class="quicklinks-container">
+    <a href="https://open.spotify.com/"><div class="quicklink"><img src="res/spotify-white-icon.svg" alt="White Spotify Logo"> Spotify</div></a>
+
+    <a href="https://youtube.com/"><div class="quicklink"><img src="res/youtube-app-white-icon.svg" alt="White YouTube Logo"> YouTube</div></a>
+
+
+
+    <div class="quicklink">Link 3</div>
+    <div class="quicklink">Link 4</div>
+    <!-- Weitere Links können hier hinzugefügt werden -->
+  </div>
+
+
+<script>
+    //QUICKLINK FADE IN ANIMATION
+    document.addEventListener("DOMContentLoaded", () => {
+  const quicklinks = document.querySelectorAll(".quicklink");
+
+  quicklinks.forEach((element, index) => {
+    // Verzögert die Animation für jedes Element
+    setTimeout(() => {
+      element.style.animation = "fadeInUp 0.6s ease forwards";
+    }, index * 200); // 200ms Verzögerung zwischen den einzelnen Quicklinks
+  });
+});
+
+
+</script>
+
 
 
 
@@ -54,6 +85,7 @@
         }, 100); // Verzögerung von 100ms für den Effekt
     });
   </script>
+
 
 
 <script src="script.js"></script>

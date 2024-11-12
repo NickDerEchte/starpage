@@ -6,10 +6,11 @@ body {
     color: aliceblue;
     font-family: Arial, sans-serif;
     background-image: url(https://cdn.pixabay.com/photo/2016/11/07/14/03/japan-1805865_1280.jpg);
-    background-size: cover; /* Bild wird auf 100% skaliert und gecroppt */
-    background-position: center; /* Zentrum des Bildes wird angezeigt */
-    background-repeat: no-repeat; /* Verhindert die Wiederholung des Bildes */
-    overflow: hidden; /* Verhindert das Scrollen */
+    background-size: cover; /* 100% */
+    background-position: center; /* centre */
+    background-repeat: no-repeat; 
+    overflow: hidden; /* Stop Scroll */
+    text-decoration: none;
 }
 
 .search-div {
@@ -31,24 +32,95 @@ body {
 }
 .center-search {
     
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
     width: 320px;
 }
 
+.quicklinks-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    gap: 55px; /* Abstand zwischen den Elementen */
+    padding: 55px; /* Abstand zum Bildschirmrand */
+    max-width: 900px; /* Maximale Breite des Containers */
+    margin: 0 auto; /* Zentriert den Container horizontal */
+    box-sizing: border-box; /* Inklusive Padding und Border in der Breite */
+  }
+  
+  /* Stile für einzelne Quicklinks */
+  .quicklink {
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    transform: translateY(20px); /* Startet leicht nach unten verschoben */
+    transition: background-color 0.3s ease;
+    opacity: 0; /* Unsichtbar am Anfang */
+
+    background-color: #03030363;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
+    backdrop-filter: blur(5px);
+    border-radius: 13px;
+    border: 1px solid #00000050;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .quicklink:hover {
+    background-color: #0000008a;
+  }
+  
+  /* Responsive Verhalten: Bei kleineren Bildschirmen einspaltig */
+  @media (max-width: 600px) {
+    .quicklinks-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+/*
+  .quicklink .icon {
+    margin-right: 8px; 
+    width: 1em;
+    height: 1em;
+    vertical-align: baseline;
+}
+*/
+
+
+
+.quicklink .icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    margin-right: 0.3em; /* Abstand zum Text */
+}
+
+
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 
 
 
 
-
-
-
-
-
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 
