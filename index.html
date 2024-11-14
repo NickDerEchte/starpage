@@ -41,7 +41,8 @@
 
 </div>
 <br>
-
+<div class="title-container">
+<h1 class="title">Quicklinks</h1></div>
 <div class="quicklinks-container">
     <a href="https://open.spotify.com/"><div class="quicklink"><img src="res/spotify-white-icon.svg" alt="White Spotify Logo"> Spotify</div></a>
 
@@ -54,7 +55,7 @@
     <!-- Weitere Links können hier hinzugefügt werden -->
   </div>
 
-
+<!--
 <script>
     //QUICKLINK FADE IN ANIMATION
     document.addEventListener("DOMContentLoaded", () => {
@@ -69,13 +70,29 @@
 });
 
 
+
+
+</script>
+-->
+
+<script>
+    // QUICKLINK FADE IN ANIMATION
+document.addEventListener("DOMContentLoaded", () => {
+  const quicklinks = document.querySelectorAll(".quicklink, h1.title, .search-all");
+
+  quicklinks.forEach((element, index) => {
+    // Verzögert die Animation für jedes Element
+    setTimeout(() => {
+      element.style.animation = "fadeInUp 0.6s ease forwards";
+    }, index * 200); // 200ms Verzögerung zwischen den einzelnen Elementen
+  });
+});
 </script>
 
 
 
 
-
-
+<!--
 <script>
     // Fügt die "show"-Klasse nach einer kurzen Verzögerung hinzu
     window.addEventListener("load", function() {
@@ -84,8 +101,8 @@
             container.classList.add("show");
         }, 100); // Verzögerung von 100ms für den Effekt
     });
-  </script>
-
+</script>
+-->
 
 
 <script src="script.js"></script>

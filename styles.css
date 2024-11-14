@@ -19,6 +19,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .search-all {
     display: flex;
     justify-content: center;
@@ -26,7 +27,7 @@ body {
     flex-direction: column;
     background-color: #03030363;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(9px);
     border-radius: 13px;
     border: 1px solid #00000050;
 }
@@ -41,11 +42,37 @@ body {
     width: 320px;
 }
 
+.title-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+  gap: 55px; /* Abstand zwischen den Elementen */
+  padding-left: 55px; /* Abstand zum Bildschirmrand */
+  padding-right: 55px; /* Abstand zum Bildschirmrand */
+  padding-bottom: 21px; /* Abstand zum Bildschirmrand */
+  padding-top: 33px; /* Abstand zum Bildschirmrand */
+  max-width: 900px; /* Maximale Breite des Containers */
+  margin: 0 auto; /* Zentriert den Container horizontal */
+  box-sizing: border-box; /* Inklusive Padding und Border in der Breite */
+
+}
+
+h1.title {
+  font-weight: bold;
+  color: #fffffff1;
+  font-size: 2em;
+  text-shadow: 2px 2px 11px rgba(12, 12, 12, 0.747);
+  opacity: 0;
+}
+
+
 .quicklinks-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
     gap: 55px; /* Abstand zwischen den Elementen */
-    padding: 55px; /* Abstand zum Bildschirmrand */
+    padding-left: 55px; /* Abstand zum Bildschirmrand */
+    padding-right: 55px; /* Abstand zum Bildschirmrand */
+    padding-bottom: 55px; /* Abstand zum Bildschirmrand */
+    padding-top: 33px; /* Abstand zum Bildschirmrand */
     max-width: 900px; /* Maximale Breite des Containers */
     margin: 0 auto; /* Zentriert den Container horizontal */
     box-sizing: border-box; /* Inklusive Padding und Border in der Breite */
@@ -188,17 +215,7 @@ footer a {
 
 /* Grundstil des Divs */
 .container {
-    opacity: 0; /* Startet unsichtbar */
-    transform: translateY(20px); /* Leicht nach unten verschoben */
     transition: all 0.6s ease; /* Übergangseffekt */
-    backdrop-filter: blur(0.5px);
-    border-radius: 13px;
-}
 
-/* Eingeblendeter Zustand */
-.container.show {
-    opacity: 1; /* Sichtbar */
-    transform: translateY(0); /* Zurück zur normalen Position */
-    backdrop-filter: blur(5px);
     border-radius: 13px;
 }
