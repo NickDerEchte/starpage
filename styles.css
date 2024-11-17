@@ -56,6 +56,10 @@ body {
 
 }
 
+.space {
+  padding-bottom: 13em;
+}
+
 h1.title {
   font-weight: bold;
   color: #fffffff1;
